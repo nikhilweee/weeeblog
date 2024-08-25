@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: nikhilweee/nweeeblog
+  repo: nikhilweee/weeeblog
   branch: main # Branch to update (optional; defaults to master)
   base_url: https://decap.nikhilweee.me # Base URL for OAuth proxy
 
