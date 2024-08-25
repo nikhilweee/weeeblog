@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: nikhilweee/nikhilweee.github.io
+  repo: nikhilweee/nweeeblog
   branch: main # Branch to update (optional; defaults to master)
+  base_url: http://decap.nikhilweee.me # Base URL for OAuth proxy
 
 local_backend: true
 publish_mode: editorial_workflow
@@ -30,7 +31,7 @@ collections:
       - { label: "Katex", name: "katex", widget: "boolean", default: false }
       - { label: "Citations", name: "citations", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
-    sortable_fields: ['date', 'title']
+    sortable_fields: ["date", "title"]
     view_groups:
       - label: Year
         field: date
