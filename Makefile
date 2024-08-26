@@ -1,7 +1,11 @@
 .PHONY: all
 
-help:           ## show this help
+help:           ## show help
 	@sed -ne '/@sed/!s/## //p' $(MAKEFILE_LIST)
 
-serve:          ## run hugo server
-	hugo server --cleanDestinationDir --buildDrafts
+build:          ## build site
+	hugo --cleanDestinationDir
+	npx pagefind --site "public"
+
+serve:          ## run server
+	hugo server --buildDrafts

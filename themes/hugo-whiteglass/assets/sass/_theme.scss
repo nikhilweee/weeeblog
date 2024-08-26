@@ -53,13 +53,16 @@ button {
  */
 
 code {
+  font-size: calc(0.8 * var(--body-font-size));
   background-color: var(--code-color);
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 0.25rem;
 }
 
 pre {
   font-size: calc(0.8 * var(--body-font-size));
+  background-color: var(--code-color);
+  border-radius: 5px;
   padding: 0.5rem;
   overflow: auto;
 }

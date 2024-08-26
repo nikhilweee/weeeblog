@@ -15,7 +15,7 @@ showcases commonly used elements.
 ---
 
 Headings have been scaled to preserve their order. The first three levels -- `H1`, `H2` and `H3` are
-scaled to `1.5rem`, `1.25rem` and `1.17rem` respectively. All other headings -- `H4`, `H5` and `H6`
+scaled to `1.5rem`, `1.25rem` and `1.12rem` respectively. All other headings -- `H4`, `H5` and `H6`
 are scaled to `1rem`. Here is what they look like.
 
 # Heading 1
