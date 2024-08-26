@@ -6,9 +6,12 @@
  *
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
 body {
-  font-family: system-ui, sans-serif;
-  font-weight: normal;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
   line-height: 1.6em;
   background: var(--background-color);
   color: var(--foreground-color);
@@ -39,21 +42,21 @@ sup {
  */
 
 h1 {
-  font-size: 1.5rem;
+  font-size: calc(1.5 * var(--title-font-size));
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: calc(1.25 * var(--title-font-size));
 }
 
 h3 {
-  font-size: 1.17rem;
+  font-size: calc(1.17 * var(--title-font-size));
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1rem;
+  font-size: calc(1 * var(--title-font-size));
 }
 
 h1,
@@ -63,6 +66,7 @@ h4,
 h5,
 h6 {
   margin-block: 1.33rem;
+  font-family: var(--title-font-family);
 }
 
 /* 
