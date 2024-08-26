@@ -13,10 +13,7 @@
     let message = { setConfig: { theme: theme } };
     let iframe = document.querySelector("iframe.giscus-frame");
     if (iframe) {
-      iframe.contentWindow.postMessage(
-        { giscus: message },
-        "https://giscus.app",
-      );
+      iframe.contentWindow.postMessage({ giscus: message }, "https://giscus.app");
     }
   }
 
@@ -38,7 +35,7 @@
 {{ if and (eq .Section "blog") (.IsPage) (ne .Params.comments false) }}
   <script
     src="https://giscus.app/client.js"
-    data-repo="nikhilweee/nikhilweee.github.io"
+    data-repo="nikhilweee/weeeblog"
     data-repo-id="MDEwOlJlcG9zaXRvcnkzOTU5NjUwNTc="
     data-category="Comments"
     data-category-id="DIC_kwDOF5nygc4COpdc"
