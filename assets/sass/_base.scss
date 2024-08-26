@@ -6,13 +6,10 @@
  *
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
-
 body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
-  line-height: 1.6em;
+  line-height: 1.5rem;
   background: var(--background-color);
   color: var(--foreground-color);
   scrollbar-color: var(--muted-color) var(--code-color);
@@ -50,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1.17 * var(--title-font-size));
+  font-size: calc(1.12 * var(--title-font-size));
 }
 
 h4,
@@ -65,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-block: 1.33rem;
+  margin-block: 1.2rem;
   font-family: var(--title-font-family);
 }
 
