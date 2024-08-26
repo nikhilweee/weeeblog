@@ -1,0 +1,47 @@
+{{ define "main" }}
+  {{ "<!-- begin: layouts/_default/taxonomy.html -->" | safeHTML }}
+  {{ $taxonomy := .Site.GetPage .Data.Plural }}
+
+
+  <div class="tags">
+    {{ range $taxonomy.Pages }}
+      <span class="tag">
+        <a href="{{ .RelPermalink }}">
+          {{ .Name }}
+        </a>
+      </span>
+    {{ end }}
+  </div>
+
+  <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  {{ range .Paginator.Pages }}
+    <div class="post-list-grid">
+      <span>
+        {{- .Date.Format "Jan 02, 2006" -}}
+      </span>
+      <a href="{{- .RelPermalink -}}">
+        {{- .Title -}}
+      </a>
+      <span class="post-list-muted">{{ .ReadingTime }} min read</span>
+      <span class="post-list-taxonomies">
+        {{ with .Params.categories }}
+          {{ range first 1 . }}
+            {{ with $.Site.GetPage ( . | urlize ) }}
+              <span class="tag">
+                <a href="{{- .RelPermalink -}}">
+                  {{ .Title }}
+                </a>
+              </span>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </span>
+    </div>
+    <p></p>
+  {{ end }}
+
+  {{ partial "pagination" . }}
+
+  {{ "<!-- end: layouts/_default/taxonomy.html -->" | safeHTML }}
+{{ end }}

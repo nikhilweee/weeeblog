@@ -1,0 +1,74 @@
+/* 
+ *
+ * Grid
+ *
+ * Create a 4 x 5 grid with 5 columns and 4 rows.
+ * 
+ * |------|------|------|------|------|
+ * |      |      |      |      |      |
+ * |      |      |      |      |      |
+ * |------|------|------|------|------|
+ * |      |      |      |      |      |
+ * |      |      |      |      |      |
+ * |------|------|------|------|------|
+ * |      |      |      |      |      |
+ * |      |      |      |      |      |
+ * |------|------|------|------|------|
+
+ */
+
+body {
+  display: grid;
+  grid-template-areas:
+    ". .     header  .     ."
+    ". .     main    aside ."
+    ". .     footer  .     .";
+  grid-template-columns: 1fr 256px 768px 256px 1fr;
+  grid-template-rows: auto 1fr auto;
+  align-content: stretch;
+  min-height: 100vh;
+}
+
+/* Keep reducing sidebar widths with screen width */
+
+@media only screen and (max-width: 1280px) {
+  body {
+    grid-template-columns: 1fr 0 minmax(256px, 512px) 0 1fr;
+  }
+}
+
+header,
+main,
+footer,
+aside {
+  padding: 1rem 2rem;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+aside {
+  grid-area: aside;
+}
+
+@media only screen and (max-width: 1280px) {
+  header,
+  main,
+  footer,
+  aside {
+    padding: 1rem 1rem;
+  }
+
+  aside {
+    display: none;
+  }
+}

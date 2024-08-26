@@ -1,0 +1,113 @@
+/* 
+ *
+ * Table of Contents
+ *
+ */
+
+body {
+  height: auto;
+}
+
+aside {
+  align-self: start;
+  position: sticky;
+  top: 0;
+}
+
+/* 
+ *
+ * Post List
+ *
+ */
+
+.post-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 0 1rem;
+}
+
+/* On screens below 768px, set different column widths. */
+
+@media only screen and (max-width: 1280px) {
+  .post-list-grid {
+    grid-template-columns: 2fr 5fr;
+  }
+}
+
+.post-list-muted {
+  color: var(--muted-color);
+}
+
+/* 
+ *
+ * Post Single
+ *
+ */
+
+.post-meta {
+  color: var(--muted-color);
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+}
+
+.post-toc {
+  margin: 1rem 0;
+  background-color: var(--code-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: none;
+}
+
+.post-toc summary {
+  cursor: pointer;
+}
+
+.post-toc ul {
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .post-toc {
+    display: block;
+  }
+}
+
+/*
+ *
+ * Images
+ *
+ */
+
+figure {
+  img,
+  video {
+    width: 100%;
+  }
+}
+
+figcaption {
+  color: var(--muted-color);
+  text-align: center;
+  p {
+    margin-top: 0;
+  }
+}
+
+/* 
+ *
+ * Common
+ *
+ */
+
+span.tag {
+  display: inline-block;
+  background-color: var(--code-color);
+  border-radius: 2px;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  a {
+    color: var(--muted-color);
+  }
+}

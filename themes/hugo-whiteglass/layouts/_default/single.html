@@ -1,0 +1,40 @@
+{{ define "aside" }}
+  {{ "<!-- begin: layouts/_default/single.html -->" | safeHTML }}
+  {{ if and (eq .Section "blog" ) (.IsPage) (not (eq .Params.toc false)) }}
+    <strong>Table of Contents</strong>
+    <div id="tocbot"></div>
+  {{ end }}
+  {{ "<!-- end: layouts/_default/single.html -->" | safeHTML }}
+{{ end }}
+
+{{ define "heading" }}
+  {{ "<!-- begin: layouts/_default/single.html -->" | safeHTML }}
+  <h1 class="post-title" data-pagefind-meta="title" data-pagefind-weight="8.0">
+    {{ .Title }}
+  </h1>
+  <div class="post-meta">
+    {{ .PublishDate.Format "Jan 02, 2006" }} • {{ .ReadingTime }} mins read
+    {{ range .GetTerms "categories" }}
+      •
+      <span class="tag">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </span>
+    {{ end }}
+  </div>
+  {{ "<!-- end: layouts/_default/single.html -->" | safeHTML }}
+{{ end }}
+
+{{ define "main" }}
+  {{ "<!-- begin: layouts/_default/single.html -->" | safeHTML }}
+
+  {{ if and (eq .Section "blog" ) (.IsPage) (not (eq .Params.toc false)) }}
+    <details class="post-toc">
+      <summary>Table of Contents</summary>
+      {{ .TableOfContents }}
+    </details>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ "<!-- end: layouts/_default/single.html -->" | safeHTML }}
+{{ end }}
