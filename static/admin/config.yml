@@ -20,8 +20,8 @@ collections:
     label: "Blog" # Used in the UI
     folder: "content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    preview_path: "blog/{{year}}/{{slug}}"
+    slug: "{{year}}-{{fields.slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    preview_path: "blog/{{year}}/{{fields.slug}}"
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }

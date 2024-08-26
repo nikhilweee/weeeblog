@@ -4,6 +4,7 @@ date = '2016-01-28T00:00:00Z'
 subtitle = 'Set up IRC on a blocked connection'
 tags = ['irc', 'web']
 title = 'Shout IRC!'
+slug = "shout-irc"
 +++
 
 If you're reading this, there are high chances that you are under internet surveillance and your IT

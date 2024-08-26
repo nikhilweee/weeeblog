@@ -1,5 +1,6 @@
 +++
 title = "Zotfetch: Fetch and Relocate PDFs in Zotero 7"
+subtitle = "And save on storage costs!"
 categories = ['Tools']
 date = '2024-02-29'
 slug = 'introducing-zotfetch'

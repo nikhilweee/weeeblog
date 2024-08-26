@@ -1,5 +1,6 @@
 +++
 title = "You probably don't need Zotero's File Sync feature"
+subtitle = "Simply re-download attachments as you please"
 categories = ['Tools']
 date = '2024-02-18'
 slug = 'zotero-file-sync'

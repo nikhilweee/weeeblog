@@ -4,6 +4,7 @@ date = '2016-08-11T00:00:00Z'
 subtitle = 'Automatically mount linux partitions'
 tags = ['linux']
 title = 'Persistent Mounts'
+slug = "persistent-mounts"
 +++
 
 After installing your linux distro, though you'll be able to access your Windows/NTFS partitions

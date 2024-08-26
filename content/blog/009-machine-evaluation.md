@@ -6,6 +6,7 @@ katex = true
 subtitle = 'Automatic evaluation metrics explained'
 tags = ['cube', 'algorithms']
 title = 'Machine Evaluation Metrics'
+slug = "machine-evaluation"
 +++
 
 Over the years, neural networks have only become smarter and better at understanding the world

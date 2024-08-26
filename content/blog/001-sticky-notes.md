@@ -4,6 +4,7 @@ date = '2016-01-01'
 subtitle = "Stuff I'd like to keep note of"
 tags = ['hacks', 'tutorial', 'linux']
 title = 'Sticky Notes'
+slug = "sticky-notes"
 +++
 
 This page hosts little ideas, solutions to problems I've faced in the past or mistakes that I don't
