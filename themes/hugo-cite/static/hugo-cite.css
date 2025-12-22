@@ -1,0 +1,52 @@
+/* =============================================================================
+/* Hugo-Cite.css
+/* ----------------------------------------------------------------------------- */
+
+.hugo-cite-group
+  .hugo-cite-citation {
+    display: none;
+    position: absolute;
+    border: 1px solid;
+    background-color: white;
+    z-index: 1;
+    padding: 1em;
+    /* Center Horizontally */
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+}
+
+
+.hugo-cite-group:hover
+  .hugo-cite-citation {
+    display: inline-block;
+}
+
+@media (hover: none) {
+  .hugo-cite-group:hover
+    .hugo-cite-citation {
+      display: inline-block;
+  }
+  .hugo-cite-group:hover
+    a {
+      pointer-events: none;
+    }
+}
+
+/* Visually Hidden utility class */
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.hugo-cite-bibliography {
+  color: rgb(117, 117, 117);
+  font-size: 0.9em;
+}
+
+.hugo-cite-bibliography dd {
+  margin-bottom: 10px;
+}
