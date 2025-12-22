@@ -30,9 +30,9 @@ url = '/'
 Hi! My name is Nikhil and this is my home on the internet.
 
 I'm currently building LLM based systems for document understanding at
-[Roots Automation](https://www.rootsautomation.com/). I graduated from NYU's Courant Institute with
-a Masters in Computer Science, where I was a part of the [CILVR](https://wp.nyu.edu/cilvr/) group
-working with [Prof. Lerrel Pinto](https://www.lerrelpinto.com/) and
+[Roots AI](https://www.roots.ai/). I graduated from NYU's Courant Institute with a Masters in
+Computer Science, where I was a part of the [CILVR](https://wp.nyu.edu/cilvr/) group working with
+[Prof. Lerrel Pinto](https://www.lerrelpinto.com/) and
 [Prof. Rob Fergus](https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php). My research culminated into a
 [thesis](https://drive.google.com/file/d/1q1yeEaq8DBPaiMIT0vS4exm3ayViZzB0/view) on Offline
 Reinforcement Learning for Imperfect Information Games.
@@ -50,6 +50,12 @@ code to natural language. For more information, you can have a look at my [resum
 ## Publications
 
 ---
+
+{{<spanright>}}[[Abstract]](https://aclanthology.org/2025.coling-industry.26/){{</spanright>}}
+**Page Stream Segmentation with LLMs: Challenges and Applications in Insurance Document
+Automation**  
+_Hunter Heidenreich, Ratish Dalvi, **Nikhil Verma**, Yosheb Getachew_  
+Paper published at COLING 2025
 
 {{<spanright>}}[[Abstract]](https://aclanthology.org/2020.emnlp-main.589/){{</spanright>}} **Neural
 Conversational QA: Learning to Reason vs Exploiting Patterns**  
