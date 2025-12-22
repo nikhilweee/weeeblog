@@ -28,7 +28,7 @@
   window.addEventListener("message", handleGiscusMessage);
 </script>
 
-{{ if .Site.GoogleAnalytics }}
+{{ if site.Config.Services.GoogleAnalytics.ID }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 

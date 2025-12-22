@@ -1,6 +1,6 @@
 +++
 citations = true
-layout = 'index'
+layout = 'landing'
 title = 'Projects'
 +++
 

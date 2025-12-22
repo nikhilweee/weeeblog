@@ -1,6 +1,6 @@
 +++
 SiteTitle = "Nikhil Verma"
-layout = 'index'
+layout = 'landing'
 url = '/'
 +++
 
@@ -27,7 +27,7 @@ url = '/'
 
 {{< /rawhtml >}}
 
-Hi! My name is Nikhil and this is my home on the internet.
+Hi! My name is Nikhil!
 
 I'm currently building LLM based systems for document understanding at
 [Roots AI](https://www.roots.ai/). I graduated from NYU's Courant Institute with a Masters in

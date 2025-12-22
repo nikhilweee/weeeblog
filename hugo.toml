@@ -1,13 +1,14 @@
 baseURL = "https://nikhilweee.me"
 languageCode = "en-us"
 title = "weeeblog"
-theme = ["wtfhugo", "hugo-whiteglass", "hugo-cite"]
+theme = ["hugo-whiteglass", "hugo-cite"]
 
 # Used under RSS
 copyright = "&copy; Nikhil Verma"
 
 # Number of items to show every page
-paginate = 10
+# Number of items to show every page
+pagination.pagerSize = 10
 
 # Use lastmod date from git
 enableGitInfo = false
@@ -59,6 +60,8 @@ url = "/"
 [markup.highlight]
 noClasses = false
 style = "monokailight"
+[markup.goldmark.renderer]
+unsafe = true
 [markup.tableOfContents]
 startLevel = 1
 endLevel = 3
